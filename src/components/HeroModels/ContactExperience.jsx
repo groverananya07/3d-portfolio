@@ -1,0 +1,55 @@
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+
+import Computer from "./Computer";
+
+const ContactExperience = () => {
+  return (
+    <Canvas
+      shadows
+      camera={{ position: [0, 3, 7], fov: 45 }}
+      style={{ position: "relative", zIndex: 0 }}
+    >
+      <Suspense fallback={null}>
+        <ambientLight intensity={0.6} color="#fff4e6" />
+
+        <directionalLight
+          position={[5, 5, 3]}
+          intensity={1.5}
+          color="#ffd9b3"
+        />
+
+        <directionalLight
+          position={[5, 9, 1]}
+          castShadow
+          intensity={1.5}
+          color="#ffd9b3"
+        />
+
+        <OrbitControls
+          enableZoom={false}
+          minPolarAngle={Math.PI / 5}
+          maxPolarAngle={Math.PI / 2}
+        />
+
+        {/* Floor */}
+        <mesh
+          receiveShadow
+          position={[0, -1.5, 0]}
+          rotation={[-Math.PI / 2, 0, 0]}
+        >
+          <planeGeometry args={[30, 30]} />
+          <meshStandardMaterial color="#a46b2d" />
+        </mesh>
+
+        {/* Computer Model */}
+        <group scale={0.03} position={[0, -1.3, -2]} castShadow>
+          <Computer />
+        </group>
+      </Suspense>
+    </Canvas>
+  );
+};
+
+export default ContactExperience;
