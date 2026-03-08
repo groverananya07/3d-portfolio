@@ -80,8 +80,9 @@ section {
     @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
   }
 
+  /* UPDATED: Changed to flex-col on mobile to stack text and 3D model */
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-start;
+    @apply relative z-10 xl:mt-20 mt-24 md:h-dvh min-h-screen flex flex-col lg:flex-row xl:items-center items-start justify-start;
   }
 
   .hero-text {
@@ -95,8 +96,9 @@ section {
       @apply flex flex-row items-center gap-x-2 whitespace-nowrap;
     }
 
+    /* UPDATED: Reduced mobile height to h-[38px] to fix clipping */
     .slide {
-      @apply relative inline-flex items-center md:px-2 h-[48px] md:h-[78px] overflow-hidden;
+      @apply relative inline-flex items-center md:px-2 h-[38px] md:h-[78px] overflow-hidden;
     }
   }
 
@@ -104,8 +106,9 @@ section {
     @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
+  /* UPDATED: Changed positioning to relative on mobile, absolute on desktop */
   .hero-3d-layout {
-    @apply lg:w-[50%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 right-0 z-10;
+    @apply lg:w-[50%] w-full h-[50vh] lg:h-full relative lg:absolute xl:-top-20 top-0 right-0 z-10 mt-10 lg:mt-0;
   }
 
   .navbar {

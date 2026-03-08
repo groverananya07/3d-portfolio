@@ -8,6 +8,8 @@ import TechStack from './sections/TechStack.jsx';
 import About from './components/HeroModels/About.jsx';
 import Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
+// 1. Import the Loader!
+import { Loader } from '@react-three/drei'; 
 
 const App = () => {
   return (
@@ -22,6 +24,9 @@ const App = () => {
       <About />
       <Contact />
       <Footer />
+      
+      // 2. Add the Loader at the very bottom, outside of your sections
+      <Loader />
     </main>
   )
 }
