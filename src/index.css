@@ -470,3 +470,17 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+
+/* --- CUSTOM CURSOR HIDE DESKTOP --- */
+/* We only hide the default cursor on desktop screens */
+@media (min-width: 768px) {
+  body, 
+  a, 
+  button, 
+  input, 
+  textarea,
+  .cursor-pointer {
+    cursor: none !important;
+  }
+}
+

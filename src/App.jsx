@@ -8,12 +8,18 @@ import TechStack from './sections/TechStack.jsx';
 import About from './components/HeroModels/About.jsx';
 import Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
-// 1. Import the Loader!
+
+// NEW FEATURE IMPORTS
 import { Loader } from '@react-three/drei'; 
+import CustomCursor from './components/CustomCursor.jsx';
+import ScrollProgress from './components/ScrollProgress.jsx';
 
 const App = () => {
   return (
     <main className="relative">
+      <CustomCursor />
+      <ScrollProgress />
+      
       <NavBar />
       <Hero />
       <ShowcaseSection />
@@ -25,7 +31,7 @@ const App = () => {
       <Contact />
       <Footer />
       
-      // 2. Add the Loader at the very bottom, outside of your sections
+      {/* 3D Loading Screen */}
       <Loader />
     </main>
   )
