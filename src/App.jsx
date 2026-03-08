@@ -18,9 +18,7 @@ import ScrollProgress from './components/HeroModels/ScrollProgress.jsx';
 const App = () => {
   return (
     <main className="relative">
-      <CustomCursor />
       <ScrollProgress />
-      
       <NavBar />
       <Hero />
       <ShowcaseSection />
