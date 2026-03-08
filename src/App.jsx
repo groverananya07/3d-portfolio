@@ -10,9 +10,10 @@ import Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
 
 // NEW FEATURE IMPORTS
+// NEW FEATURE IMPORTS
 import { Loader } from '@react-three/drei'; 
-import CustomCursor from './components/CustomCursor.jsx';
-import ScrollProgress from './components/ScrollProgress.jsx';
+import CustomCursor from './components/HeroModels/CustomCursor.jsx';
+import ScrollProgress from './components/HeroModels/ScrollProgress.jsx';
 
 const App = () => {
   return (
