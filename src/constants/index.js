@@ -12,14 +12,14 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ideas", imgPath: "./images/ideas.svg" },
+  { text: "Concepts", imgPath: "./images/concepts.svg" },
+  { text: "Designs", imgPath: "./images/designs.svg" },
+  { text: "Code", imgPath: "./images/code.svg" },
+  { text: "Ideas", imgPath: "./images/ideas.svg" },
+  { text: "Concepts", imgPath: "./images/concepts.svg" },
+  { text: "Designs", imgPath: "./images/designs.svg" },
+  { text: "Code", imgPath: "./images/code.svg" },
 ];
 
 const counterItems = [
@@ -54,19 +54,19 @@ const abilities = [
 ];
 
 const techStackImgs = [
-  { name: "React Developer", imgPath: "/images/logos/react.png" },
-  { name: "Python Developer", imgPath: "/images/logos/python.svg" },
-  { name: "Backend Developer", imgPath: "/images/logos/node.png" },
-  { name: "Interactive Developer", imgPath: "/images/logos/three.png" },
-  { name: "Project Manager", imgPath: "/images/logos/git.svg" },
+  { name: "React Developer", imgPath: "./images/logos/react.png" },
+  { name: "Python Developer", imgPath: "./images/logos/python.svg" },
+  { name: "Backend Developer", imgPath: "./images/logos/node.png" },
+  { name: "Interactive Developer", imgPath: "./images/logos/three.png" },
+  { name: "Project Manager", imgPath: "./images/logos/git.svg" },
 ];
 
 const techStackIcons = [
-  { name: "React Developer", modelPath: "/models/react_logo-transformed.glb", scale: 1, rotation: [0, 0, 0] },
-  { name: "Python Developer", modelPath: "/models/python-transformed.glb", scale: 0.8, rotation: [0, 0, 0] },
-  { name: "Backend Developer", modelPath: "/models/node-transformed.glb", scale: 5, rotation: [0, -Math.PI / 2, 0] },
-  { name: "Interactive Developer", modelPath: "/models/three.js-transformed.glb", scale: 0.05, rotation: [0, 0, 0] },
-  { name: "Project Manager", modelPath: "/models/git-svg-transformed.glb", scale: 0.05, rotation: [0, -Math.PI / 4, 0] },
+  { name: "React Developer", modelPath: "./models/react_logo-transformed.glb", scale: 1, rotation: [0, 0, 0] },
+  { name: "Python Developer", modelPath: "./models/python-transformed.glb", scale: 0.8, rotation: [0, 0, 0] },
+  { name: "Backend Developer", modelPath: "./models/node-transformed.glb", scale: 5, rotation: [0, -Math.PI / 2, 0] },
+  { name: "Interactive Developer", modelPath: "./models/three.js-transformed.glb", scale: 0.05, rotation: [0, 0, 0] },
+  { name: "Project Manager", modelPath: "./models/git-svg-transformed.glb", scale: 0.05, rotation: [0, -Math.PI / 4, 0] },
 ];
 
 const expCards = [
@@ -113,9 +113,9 @@ const expCards = [
 ];
 
 const expLogos = [
-  { name: "logo1", imgPath: "/images/logo1.png" },
-  { name: "logo2", imgPath: "/images/logo2.png" },
-  { name: "logo3", imgPath: "/images/logo3.png" },
+  { name: "logo1", imgPath: "./images/logo1.png" },
+  { name: "logo2", imgPath: "./images/logo2.png" },
+  { name: "logo3", imgPath: "./images/logo3.png" },
 ];
 
 const testimonials = [
@@ -123,20 +123,20 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review: "I can’t say enough good things about Ananya. She was able to take our complex project requirements and turn them into a seamless, functional website. Her problem-solving abilities are outstanding.",
-    imgPath: "/images/client1.png",
+    imgPath: "./images/client1.png",
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review: "Working with Ananya was a fantastic experience. She transformed our outdated website into a modern, user-friendly platform. Her attention to detail and commitment to quality are unmatched. Highly recommend her for any web dev projects.",
-    imgPath: "/images/client3.png",
+    imgPath: "./images/client3.png",
   },
 ];
 
 const socialImgs = [
-  { name: "insta", imgPath: "/images/insta.png",link: "https://www.instagram.com/ananya_grover07/" },
-  { name: "linkedin", imgPath: "/images/linkedin.png",link: "https://www.linkedin.com/in/ananya-grover07"},
-  { name: "gmail",imgPath: "/images/gmail.png",link: "mailto:groverananya189@gmail.com"}
+  { name: "insta", imgPath: "./images/insta.png",link: "https://www.instagram.com/ananya_grover07/" },
+  { name: "linkedin", imgPath: "./images/linkedin.png",link: "https://www.linkedin.com/in/ananya-grover07"},
+  { name: "gmail",imgPath: "./images/gmail.png",link: "mailto:groverananya189@gmail.com"}
 ];
 const aboutMe = [
   {

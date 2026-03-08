@@ -11,11 +11,11 @@ import * as THREE from "three";
 
 export function Room(props) {
   // FIX: Path corrected back to /images/models/
-  const { nodes, materials } = useGLTF("/models/optimized-room.glb");
+  const { nodes, materials } = useGLTF("./models/optimized-room.glb");
   const screensRef = useRef();
   
   // Make sure you actually have a mat1.png file in this exact folder!
-  const matcapTexture = useTexture("/images/textures/mat1.png");
+  const matcapTexture = useTexture("./images/textures/mat1.png");
 
   const curtainMaterial = new THREE.MeshPhongMaterial({
     color: "#d90429",
@@ -115,4 +115,4 @@ export function Room(props) {
 }
 
 // FIX: Path corrected back to /images/models/
-useGLTF.preload("/models/optimized-room.glb");
+useGLTF.preload("./models/optimized-room.glb");
